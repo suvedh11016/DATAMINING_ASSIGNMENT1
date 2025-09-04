@@ -11,7 +11,7 @@ Implements:
 
 ```bash
 # List products
-python3 src/app.py --data data/meta_Appliances.json.gz --list
+python3 src/app.py --data data/meta_Appliances.json.gz --list 10
 
 # Search similar products by ASIN
 python3 src/app.py --data data/meta_Appliances.json.gz --mode PST --asin B000XXXXXX --topk 10
