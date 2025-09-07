@@ -10,7 +10,7 @@
 # list_products.py
 # Exercise 1: Load and list first 10 products neatly
 
-from data import load_products_gz
+from src.data import load_products_gz
 import textwrap
 
 def main():

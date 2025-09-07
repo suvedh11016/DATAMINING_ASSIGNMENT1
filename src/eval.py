@@ -2,7 +2,7 @@
 # Evaluation utilities: precision@k, AP, MAP, hyperparameter sweeps.
 
 from typing import List, Dict, Tuple
-from index import ProductIndex
+from src.index import ProductIndex
 
 def precision_at_k(pred: List[str], gold: List[str], k: int = 10) -> float:
     k = min(k, len(pred))

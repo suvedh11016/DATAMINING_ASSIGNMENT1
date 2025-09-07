@@ -2,7 +2,7 @@
 # Provide user-facing search helpers
 
 from typing import List, Dict, Tuple
-from index import ProductIndex
+from src.index import ProductIndex
 
 def topk_similar(index: ProductIndex, doc_id: int, mode: str, top_k: int = 10) -> List[Tuple[int, float]]:
     return index.query(doc_id, mode=mode, top_k=top_k)

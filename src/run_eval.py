@@ -2,9 +2,9 @@
 # Run evaluation for Exercise 3.
 
 import argparse
-from data import load_products_gz
-from index import ProductIndex
-from eval import run_eval
+from src.data import load_products_gz
+from src.index import ProductIndex
+from src.eval import run_eval
 
 def build_index(docs, k, num_hashes, bands):
     rows = num_hashes // bands

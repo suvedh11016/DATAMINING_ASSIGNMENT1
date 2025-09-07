@@ -2,9 +2,9 @@
 # Build shingle sets, MinHash signatures, and LSH indices.
 
 from typing import List, Dict, Tuple, Set
-from text import clean_text, char_shingles
-from minhash import MinHasher, jaccard
-from lsh import LSH
+from src.text import clean_text, char_shingles
+from src.minhash import MinHasher, jaccard
+from src.lsh import LSH
 
 class FieldIndex:
     def __init__(self, k_shingle: int, num_hashes: int, bands: int, rows: int, seed: int = 42):

@@ -51,9 +51,9 @@
 # CLI to list products and search similar ones via PST/PSD/PSTD.
 
 import argparse
-from data import load_products_gz
-from index import ProductIndex
-from search import topk_similar, format_results
+from src.data import load_products_gz
+from src.index import ProductIndex
+from src.search import topk_similar, format_results
 
 def build_index(docs, k, num_hashes, bands):
     rows = num_hashes // bands
