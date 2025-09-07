@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head><title>Results for {{ query.asin }}</title></head>
+<body>
+  <h1>Query Product</h1>
+  <p><b>{{ query.asin }}</b>: {{ query.title }}</p>
+  <p>{{ query.description[:250] }}...</p>
+
+  <h2>Top Similar Products</h2>
+  <ul>
+  {% for r in results %}
+    <li>
+      <b>{{ r.asin }}</b>: {{ r.title }} <br>
+      {{ r.description[:200] }}... (score={{ "%.3f"|format(r.score) }})
+    </li>
+  {% endfor %}
+  </ul>
+
+  <a href="/">Search again</a>
+</body>
+</html>
