@@ -1,7 +1,11 @@
 from flask import Flask, render_template, request
-from data import load_products_gz
-from index import ProductIndex
-from search import topk_similar, format_results
+# from data import load_products_gz
+# from index import ProductIndex
+# from search import topk_similar, format_results
+from src.data import load_products_gz
+from src.index import ProductIndex
+from src.search import topk_similar, format_results
+
 
 app = Flask(__name__)
 
